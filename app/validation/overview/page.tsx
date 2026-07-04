@@ -26,7 +26,7 @@ export default function ValidationOverviewPage() {
           </thead>
           <tbody>
             <tr><td>1</td><td>Syntax validation</td><td>RFC 5322 compliant regex check — catches obvious typos</td></tr>
-            <tr><td>2</td><td>Disposable detection</td><td>Checks against 33,000+ known disposable/throwaway domains</td></tr>
+            <tr><td>2</td><td>Disposable detection</td><td>Checks against 120,000+ known disposable/throwaway domains</td></tr>
             <tr><td>3</td><td>Role-based filter</td><td>Identifies generic addresses (info@, admin@, support@, etc.)</td></tr>
             <tr><td>4</td><td>Free email flag</td><td>Flags Gmail, Yahoo, Outlook, and other free providers</td></tr>
             <tr><td>5</td><td>DNS MX lookup</td><td>Verifies the domain has valid mail exchange servers (5s timeout)</td></tr>
@@ -113,7 +113,7 @@ curl https://YOUR_SERVER/api/v1/workspaces/1/leads \\
           </thead>
           <tbody>
             <tr><td>Concurrency</td><td>100 parallel goroutines per validation job</td></tr>
-            <tr><td>Disposable blocklist</td><td>33,000+ domains</td></tr>
+            <tr><td>Disposable blocklist</td><td>120,000+ domains</td></tr>
             <tr><td>Score range</td><td>0–100 per email</td></tr>
             <tr><td>Queue priority</td><td>Default queue (weight 3)</td></tr>
             <tr><td>Max retry</td><td>2 attempts on failure</td></tr>

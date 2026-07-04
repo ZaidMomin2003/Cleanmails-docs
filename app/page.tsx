@@ -27,7 +27,7 @@ export default function DocsHome() {
         
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 my-6 not-prose">
           {[
-            { icon: '✉️', title: 'Email Validation', desc: '33k+ disposable blocklist, MX checks, role detection, scoring', href: '/validation/overview' },
+            { icon: '✉️', title: 'Email Validation', desc: '120k+ disposable blocklist, MX checks, role detection, scoring', href: '/validation/overview' },
             { icon: '🚀', title: 'Campaign Automation', desc: 'Multi-step sequences, A/B variants, scheduling, AI tags', href: '/campaigns/creating' },
             { icon: '🔄', title: 'Sender Rotation', desc: 'Unlimited mailboxes, round-robin rotation, daily limits', href: '/infrastructure/rotation' },
             { icon: '🔥', title: 'Mailbox Warmup', desc: 'Coordinated pool warmup with auto-reply and spam rescue', href: '/infrastructure/warmup' },
@@ -64,13 +64,8 @@ export default function DocsHome() {
             <tr><td>CPU</td><td>1 vCPU</td><td>4 vCPU</td></tr>
             <tr><td>RAM</td><td>1 GB</td><td>4 GB</td></tr>
             <tr><td>Storage</td><td>5 GB SSD</td><td>50 GB SSD</td></tr>
-            <tr><td>Port 25</td><td colSpan={2}>Must be unblocked by VPS provider</td></tr>
           </tbody>
         </table>
-
-        <Callout type="warning" title="Port 25 is critical">
-          <p>Most VPS providers block outbound port 25 by default. You must request it be unblocked before deploying. Without it, email validation and sending will not work.</p>
-        </Callout>
 
         <h2>Architecture Overview</h2>
         <p>Cleanmails runs as a single Docker Compose stack with six containers:</p>

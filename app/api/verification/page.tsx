@@ -28,7 +28,7 @@ export default function VerificationAPIPage() {
           <thead><tr><th>Step</th><th>Check</th><th>Description</th></tr></thead>
           <tbody>
             <tr><td>1</td><td>Regex syntax</td><td>RFC 5322 compliant format check</td></tr>
-            <tr><td>2</td><td>Disposable domain</td><td>Checked against 33,000+ known disposable providers</td></tr>
+            <tr><td>2</td><td>Disposable domain</td><td>Checked against 120,000+ known disposable providers</td></tr>
             <tr><td>3</td><td>Role-based filter</td><td>Detects info@, admin@, support@, etc.</td></tr>
             <tr><td>4</td><td>Free email flag</td><td>Identifies Gmail, Yahoo, Outlook addresses</td></tr>
             <tr><td>5</td><td>DNS MX lookup</td><td>Verifies domain has mail servers (5s timeout)</td></tr>

@@ -52,10 +52,6 @@ export default function ListValidationPage() {
           </tbody>
         </table>
 
-        <Callout type="info" title="Port 25 detection">
-          <p>If port 25 is blocked on your server, the validation worker detects this and marks the list with a note. Level 1 checks still run (syntax, MX, disposable), but SMTP deliverability can&apos;t be confirmed.</p>
-        </Callout>
-
         <h2>Monitoring Progress</h2>
         <p>The list shows real-time progress:</p>
         <ul>

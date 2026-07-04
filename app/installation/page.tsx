@@ -26,7 +26,6 @@ export default function InstallationPage() {
             <tr><td>CPU</td><td>1 vCPU</td><td>4 vCPU</td></tr>
             <tr><td>RAM</td><td>1 GB</td><td>4 GB</td></tr>
             <tr><td>Disk</td><td>5 GB SSD</td><td>50 GB SSD</td></tr>
-            <tr><td>Network</td><td colSpan={2}>Outbound port 25 must be unblocked</td></tr>
           </tbody>
         </table>
 

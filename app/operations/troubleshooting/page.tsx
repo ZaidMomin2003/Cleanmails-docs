@@ -21,7 +21,6 @@ export default function TroubleshootingPage() {
           </thead>
           <tbody>
             <tr><td>Server won&apos;t start</td><td>Check logs: <code>docker compose -f docker-compose.prod.yml logs api</code>. Usually a missing env var or database connection issue.</td></tr>
-            <tr><td>Port 25 blocked</td><td>Contact your VPS provider to unblock outbound port 25. Test with <code>nc -zv gmail-smtp-in.l.google.com 25</code></td></tr>
             <tr><td>License activation fails</td><td>Ensure your server can reach the internet. Check <code>docker compose -f docker-compose.prod.yml logs api | grep license</code></td></tr>
             <tr><td>Emails going to spam</td><td>Ensure SPF/DKIM/DMARC are configured. Warm up mailboxes for 2–3 weeks before campaigns.</td></tr>
             <tr><td>Campaign not sending</td><td>Check: status is &quot;active&quot;, current time is within send window, mailboxes are assigned, leads have next_send_at set.</td></tr>

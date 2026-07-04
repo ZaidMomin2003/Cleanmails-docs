@@ -44,25 +44,18 @@ export default function QuickDeployPage() {
           <p>In most terminals (Putty, etc.), you don&apos;t use Ctrl+V. Just <strong>right-click</strong> inside the terminal window to paste.</p>
         </Callout>
 
-        <Step number={2} title="Request Port 25 unblock">
-          <p>Before installing, contact your VPS provider to unblock outbound port 25. This is required for email validation and sending.</p>
+        <Step number={2} title="Point your domain to your VPS IP">
+          <p>Create an <strong>A record</strong> pointing your domain to your VPS IP address before running the installer. This is needed for SSL provisioning.</p>
         </Step>
 
         <table>
           <thead>
-            <tr><th>Provider</th><th>How to Unblock</th></tr>
+            <tr><th>Type</th><th>Name</th><th>Value</th></tr>
           </thead>
           <tbody>
-            <tr><td>Hetzner</td><td>Submit a support ticket — usually approved in &lt;1 hour</td></tr>
-            <tr><td>Vultr</td><td>Submit a support ticket via the portal</td></tr>
-            <tr><td>DigitalOcean</td><td>Submit a support ticket — may require account age</td></tr>
-            <tr><td>Contabo</td><td>Submit a support ticket</td></tr>
-            <tr><td>AWS EC2</td><td>Fill out the PTR/rDNS form in the console</td></tr>
+            <tr><td>A</td><td>app (or @)</td><td>YOUR_VPS_IP</td></tr>
           </tbody>
         </table>
-
-        <p>Test if port 25 is open:</p>
-        <CodeBlock language="bash" code="nc -zv gmail-smtp-in.l.google.com 25" />
 
         <Step number={3} title="Run the installer">
           <p>Use the command generator below to create your personalized install command, then paste it into your terminal.</p>

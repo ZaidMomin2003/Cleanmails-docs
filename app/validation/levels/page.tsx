@@ -64,7 +64,7 @@ export default function LevelsPage() {
           <thead><tr><th>Check</th><th>Speed</th><th>What It Does</th></tr></thead>
           <tbody>
             <tr><td>Syntax</td><td>&lt;1ms</td><td>RFC 5322 regex validation</td></tr>
-            <tr><td>Disposable</td><td>&lt;1ms</td><td>In-memory lookup against 33,000+ known throwaway domains</td></tr>
+            <tr><td>Disposable</td><td>&lt;1ms</td><td>In-memory lookup against 120,000+ known throwaway domains</td></tr>
             <tr><td>Role Account</td><td>&lt;1ms</td><td>Pattern match: info@, admin@, support@, etc.</td></tr>
             <tr><td>Free Provider</td><td>&lt;1ms</td><td>Known free providers: Gmail, Yahoo, Outlook, ProtonMail, etc.</td></tr>
             <tr><td>DNS MX Lookup</td><td>~50-100ms</td><td>Queries domain for mail exchange records</td></tr>
