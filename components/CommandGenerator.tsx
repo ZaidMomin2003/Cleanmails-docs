@@ -2,15 +2,13 @@
 
 import { useState } from 'react'
 
+const INSTALL_COMMAND = 'curl -fsSL https://cleanmails.online/install.sh | sudo bash'
+
 export default function CommandGenerator() {
-  const [license, setLicense] = useState('')
-  const [domain, setDomain] = useState('')
   const [copied, setCopied] = useState(false)
 
-  const command = `curl -sSL https://cleanmails.online/install.sh | bash -s -- --key ${license || '{LICENSE_KEY}'} --domain ${domain || '{YOUR_DOMAIN}'}`
-
   const copy = () => {
-    navigator.clipboard.writeText(command)
+    navigator.clipboard.writeText(INSTALL_COMMAND)
     setCopied(true)
     setTimeout(() => setCopied(false), 2500)
   }
@@ -22,38 +20,10 @@ export default function CommandGenerator() {
         Auto-Deploy
       </div>
 
-      <h3 className="text-lg font-bold text-[var(--cta-card-text)] mb-1">Installation Command Generator</h3>
+      <h3 className="text-lg font-bold text-[var(--cta-card-text)] mb-1">One-Command Installer</h3>
       <p className="text-[13px] text-[var(--text-secondary)] mb-6">
-        Fill in your details to generate a one-click installation command with automatic SSL.
+        SSH into your VPS as root and paste this. The installer will prompt for your domain, then handle Docker, the database, and SSL automatically.
       </p>
-
-      {/* Inputs */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-        <div>
-          <label className="block text-[10px] font-semibold text-[#FFD700] uppercase tracking-wider mb-2">
-            License Key
-          </label>
-          <input
-            type="text"
-            value={license}
-            onChange={(e) => setLicense(e.target.value)}
-            placeholder="CK-XXXX-XXXX"
-            className="w-full px-4 py-3 rounded-lg border-2 border-[var(--border-strong)] bg-transparent text-[var(--cta-card-text)] placeholder:text-[var(--text-tertiary)] text-sm outline-none focus:border-[#FFD700] transition-colors"
-          />
-        </div>
-        <div>
-          <label className="block text-[10px] font-semibold text-[#FFD700] uppercase tracking-wider mb-2">
-            Your App Domain
-          </label>
-          <input
-            type="text"
-            value={domain}
-            onChange={(e) => setDomain(e.target.value)}
-            placeholder="app.yourdomain.com"
-            className="w-full px-4 py-3 rounded-lg border-2 border-[var(--border-strong)] bg-transparent text-[var(--cta-card-text)] placeholder:text-[var(--text-tertiary)] text-sm outline-none focus:border-[#FFD700] transition-colors"
-          />
-        </div>
-      </div>
 
       {/* Command output */}
       <div className="rounded-lg bg-[#111] border border-[rgba(255,255,255,0.1)] p-4">
@@ -65,10 +35,7 @@ export default function CommandGenerator() {
         </div>
         <div className="flex items-start justify-between gap-4">
           <code className="text-[13px] font-mono text-white leading-relaxed break-all flex-1">
-            curl -sSL https://cleanmails.online/install.sh | bash -s -- --key{' '}
-            <span className={license ? 'text-white' : 'text-[#FFD700]'}>{license || '{LICENSE_KEY}'}</span>
-            {' '}--domain{' '}
-            <span className={domain ? 'text-white' : 'text-[#FFD700]'}>{domain || '{YOUR_DOMAIN}'}</span>
+            {INSTALL_COMMAND}
           </code>
           <button
             onClick={copy}
@@ -79,14 +46,33 @@ export default function CommandGenerator() {
         </div>
       </div>
 
+      {/* What happens next */}
+      <div className="mt-5 grid grid-cols-1 sm:grid-cols-3 gap-3">
+        <div className="rounded-lg border border-[rgba(255,255,255,0.1)] bg-[rgba(255,255,255,0.03)] p-3">
+          <p className="text-[10px] font-bold text-[#FFD700] uppercase tracking-wider mb-1">Step 1</p>
+          <p className="text-[12px] text-[var(--text-secondary)] leading-relaxed">
+            Point an A record at your VPS IP <em>before</em> running the command.
+          </p>
+        </div>
+        <div className="rounded-lg border border-[rgba(255,255,255,0.1)] bg-[rgba(255,255,255,0.03)] p-3">
+          <p className="text-[10px] font-bold text-[#FFD700] uppercase tracking-wider mb-1">Step 2</p>
+          <p className="text-[12px] text-[var(--text-secondary)] leading-relaxed">
+            Run the command. Enter your domain when prompted. Wait ~3–5 min.
+          </p>
+        </div>
+        <div className="rounded-lg border border-[rgba(255,255,255,0.1)] bg-[rgba(255,255,255,0.03)] p-3">
+          <p className="text-[10px] font-bold text-[#FFD700] uppercase tracking-wider mb-1">Step 3</p>
+          <p className="text-[12px] text-[var(--text-secondary)] leading-relaxed">
+            Open the dashboard URL and paste your license key on the welcome screen.
+          </p>
+        </div>
+      </div>
+
       {/* rDNS note */}
       <div className="mt-5 rounded-lg border border-dashed border-[rgba(255,255,255,0.15)] bg-[rgba(255,255,255,0.03)] p-4">
         <p className="text-[10px] font-bold text-[#FFD700] uppercase tracking-wider mb-1">rDNS Configuration</p>
         <p className="text-[12px] text-[var(--text-secondary)] leading-relaxed">
-          Set your server&apos;s Reverse DNS (PTR) record to:{' '}
-          <code className="bg-[#000] text-[#FFD700] px-2 py-0.5 rounded text-[12px] font-mono">
-            {domain || '{YOUR_DOMAIN}'}
-          </code>
+          After install, set your server&apos;s Reverse DNS (PTR) record at your VPS provider to the same domain. Essential for inbox delivery.
         </p>
       </div>
     </div>
