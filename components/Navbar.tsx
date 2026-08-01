@@ -13,7 +13,7 @@ export default function Navbar() {
             </svg>
           </div>
           <div className="truncate">
-            <span className="text-[13px] sm:text-[14px] font-semibold text-[var(--text)]">Cold Mail</span>
+            <span className="text-[13px] sm:text-[14px] font-semibold text-[var(--text)]">Cleanmails</span>
             <span className="text-[13px] sm:text-[14px] text-[var(--text-tertiary)] ml-1 sm:ml-1.5">/</span>
             <span className="text-[13px] sm:text-[14px] text-[var(--text-tertiary)] ml-1 sm:ml-1.5">Docs</span>
           </div>
@@ -26,7 +26,7 @@ export default function Navbar() {
           <ThemeToggle />
           <a href="https://coldmail.host" target="_blank" rel="noopener noreferrer"
             className="text-[11px] sm:text-[12px] font-semibold text-[#37352f] bg-[#FFD700] hover:bg-[#f0cc00] px-2.5 sm:px-3.5 py-1.5 rounded-md transition-colors no-underline whitespace-nowrap">
-            Get Cold Mail
+            Get Cleanmails
           </a>
         </div>
       </div>

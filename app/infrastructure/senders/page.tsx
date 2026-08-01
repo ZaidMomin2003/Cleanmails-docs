@@ -27,7 +27,7 @@ export default function SendersPage() {
         </Step>
 
         <Step number={3} title="Mailbox is auto-created">
-          <p>Cold mail automatically creates the mailbox on docker-mailserver with a secure random password, configures SMTP and IMAP credentials, and tests the connection.</p>
+          <p>Cleanmails automatically creates the mailbox on docker-mailserver with a secure random password, configures SMTP and IMAP credentials, and tests the connection.</p>
         </Step>
 
         <h2>External SMTP Accounts</h2>
@@ -52,7 +52,7 @@ export default function SendersPage() {
         </Step>
 
         <Step number={3} title="Connection test">
-          <p>Cold mail tests both SMTP and IMAP connections before saving. If SMTP fails, the sender is not created.</p>
+          <p>Cleanmails tests both SMTP and IMAP connections before saving. If SMTP fails, the sender is not created.</p>
         </Step>
 
         <Callout type="info" title="Password encryption">

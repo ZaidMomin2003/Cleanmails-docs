@@ -13,7 +13,7 @@ export default function EnvVariablesPage() {
         </span>
         <h1>Environment Variables</h1>
         <p>
-          Cold mail is configured entirely through environment variables. These are set in your <code>.env</code> file 
+          Cleanmails is configured entirely through environment variables. These are set in your <code>.env</code> file 
           (located at <code>/opt/cleanmails/.env</code> after installation).
         </p>
 

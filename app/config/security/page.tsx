@@ -9,7 +9,7 @@ export default function SecurityPage() {
       <div className="docs-prose">
         <span className="inline-block text-[10px] font-semibold text-[var(--text-secondary)] bg-[var(--tag-bg)] px-2.5 py-1 rounded uppercase tracking-wider mb-4">Configuration</span>
         <h1>Security</h1>
-        <p>Cold mail implements multiple layers of security to protect your data and infrastructure.</p>
+        <p>Cleanmails implements multiple layers of security to protect your data and infrastructure.</p>
 
         <h2>Encryption</h2>
         <ul>

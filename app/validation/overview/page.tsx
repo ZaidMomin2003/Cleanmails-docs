@@ -13,7 +13,7 @@ export default function ValidationOverviewPage() {
         </span>
         <h1>Email Validation Overview</h1>
         <p>
-          cold mail includes a built-in email validation engine that checks addresses through multiple layers. 
+          Cleanmails includes a built-in email validation engine that checks addresses through multiple layers. 
           Validation runs as a background job when you trigger it on an uploaded lead list — results appear in real-time on the leads table.
         </p>
 

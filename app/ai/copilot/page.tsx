@@ -9,7 +9,7 @@ export default function AICopilotPage() {
       <div className="docs-prose">
         <span className="inline-block text-[10px] font-semibold text-[var(--text-secondary)] bg-[var(--tag-bg)] px-2.5 py-1 rounded uppercase tracking-wider mb-4">AI & Integrations</span>
         <h1>AI Features</h1>
-        <p>Cold mail supports 6 LLM providers for AI auto-reply, email enhancement, and the MCP integration. Bring your own API key — no usage fees from cold mail.</p>
+        <p>Cleanmails supports 6 LLM providers for AI auto-reply, email enhancement, and the MCP integration. Bring your own API key — no usage fees from Cleanmails.</p>
 
         <h2>Supported Providers</h2>
         <table>

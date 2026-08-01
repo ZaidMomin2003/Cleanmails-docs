@@ -9,7 +9,7 @@ export default function CRMPage() {
       <div className="docs-prose">
         <span className="inline-block text-[10px] font-semibold text-[var(--text-secondary)] bg-[var(--tag-bg)] px-2.5 py-1 rounded uppercase tracking-wider mb-4">AI & Integrations</span>
         <h1>CRM Integrations</h1>
-        <p>Sync leads and events with your CRM. When a lead replies, bounces, or books a meeting, cold mail can automatically create or update records in your CRM.</p>
+        <p>Sync leads and events with your CRM. When a lead replies, bounces, or books a meeting, Cleanmails can automatically create or update records in your CRM.</p>
 
         <h2>Native Integrations</h2>
         <table>
@@ -51,7 +51,7 @@ export default function CRMPage() {
             <tr><td>Freshsales</td><td>Zapier, Make</td></tr>
           </tbody>
         </table>
-        <p>Use cold mail webhooks (9 event types with HMAC-signed payloads) as triggers in your automation platform to push data to any CRM.</p>
+        <p>Use Cleanmails webhooks (9 event types with HMAC-signed payloads) as triggers in your automation platform to push data to any CRM.</p>
 
         <h2>Connecting HubSpot</h2>
         <ol>

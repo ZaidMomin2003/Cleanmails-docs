@@ -11,7 +11,7 @@ export default function TrackingPage() {
           Campaigns
         </span>
         <h1>Tracking & Analytics</h1>
-        <p>cold mail tracks opens, clicks, replies, bounces, and unsubscribes for every email sent.</p>
+        <p>Cleanmails tracks opens, clicks, replies, bounces, and unsubscribes for every email sent.</p>
 
         <h2>Open Tracking</h2>
         <p>When enabled, a 1x1 transparent pixel is appended to each email. When the recipient loads images, the pixel fires and records the open.</p>
@@ -22,7 +22,7 @@ export default function TrackingPage() {
         </ul>
 
         <h2>Click Tracking</h2>
-        <p>When enabled, all links in your email body are wrapped with tracking redirects. When a recipient clicks, cold mail logs the click and redirects to the original URL.</p>
+        <p>When enabled, all links in your email body are wrapped with tracking redirects. When a recipient clicks, Cleanmails logs the click and redirects to the original URL.</p>
         <ul>
           <li>Uses secure SHA-256 hashed link IDs (not Base64) to prevent bot pre-fetching</li>
           <li>Bot clicks are detected and excluded from stats</li>

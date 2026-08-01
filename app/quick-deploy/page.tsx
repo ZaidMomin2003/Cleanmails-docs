@@ -16,14 +16,14 @@ export default function QuickDeployPage() {
         </span>
         <h1>Quick Deploy</h1>
         <p>
-          Go from zero to a fully working cold mail instance in under 10 minutes. 
+          Go from zero to a fully working Cleanmails instance in under 10 minutes. 
           No coding required — just a VPS and your license key.
         </p>
 
         <h2>What is a VPS?</h2>
         <p>
           A <strong>VPS (Virtual Private Server)</strong> is a computer that stays on 24/7 in a data center. 
-          Instead of running cold mail on your laptop, you run it on a VPS so it can handle thousands of emails while you sleep.
+          Instead of running Cleanmails on your laptop, you run it on a VPS so it can handle thousands of emails while you sleep.
         </p>
 
         <Callout type="info" title="Recommended VPS Providers">
@@ -67,7 +67,7 @@ export default function QuickDeployPage() {
         <ol>
           <li>Run preflight checks (root, RAM, disk, port availability)</li>
           <li>Install Docker Engine and Docker Compose (if not present)</li>
-          <li>Download the latest release from the cold mail S3 bucket</li>
+          <li>Download the latest release from the Cleanmails S3 bucket</li>
           <li>Build Docker images (API, Worker, Frontend)</li>
           <li>Generate secure secrets (AES-256 encryption key, JWT secret, DB password)</li>
           <li>Configure Caddy reverse proxy with security headers</li>

@@ -7,8 +7,8 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'sw
 const lora = Lora({ subsets: ['latin'], variable: '--font-lora', display: 'swap' })
 
 export const metadata: Metadata = {
-  title: { default: 'Documentation — Cold Mail', template: '%s | Cold Mail Docs' },
-  description: 'Complete documentation for Cold Mail — self-hosted cold email infrastructure. Installation, campaigns, email validation, MCP, API reference, and more.',
+  title: { default: 'Documentation — Cleanmails', template: '%s | Cleanmails Docs' },
+  description: 'Complete documentation for Cleanmails — self-hosted cold email infrastructure. Installation, campaigns, email validation, MCP, API reference, and more.',
   metadataBase: new URL('https://coldmail.host'),
   icons: {
     icon: [
@@ -16,11 +16,11 @@ export const metadata: Metadata = {
     ],
     apple: '/apple-icon.svg',
   },
-  openGraph: { type: 'website', siteName: 'Cold Mail Docs', locale: 'en_US', title: 'Cold Mail Documentation', description: 'Complete documentation for Cold Mail — self-hosted cold email infrastructure platform.' },
-  twitter: { card: 'summary_large_image', title: 'Cold Mail Documentation', description: 'Installation, campaigns, email validation, MCP server, API reference, and more.' },
+  openGraph: { type: 'website', siteName: 'Cleanmails Docs', locale: 'en_US', title: 'Cleanmails Documentation', description: 'Complete documentation for Cleanmails — self-hosted cold email infrastructure platform.' },
+  twitter: { card: 'summary_large_image', title: 'Cleanmails Documentation', description: 'Installation, campaigns, email validation, MCP server, API reference, and more.' },
   robots: { index: true, follow: true },
   alternates: { canonical: 'https://coldmail.host/docs' },
-  keywords: ['cold mail', 'cold email', 'email validation', 'self-hosted', 'documentation', 'MCP', 'sender rotation', 'email warmup', 'campaign automation'],
+  keywords: ['Cleanmails', 'cold email', 'email validation', 'self-hosted', 'documentation', 'MCP', 'sender rotation', 'email warmup', 'campaign automation'],
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

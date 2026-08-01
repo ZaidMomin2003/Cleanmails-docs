@@ -55,7 +55,7 @@ export default function SequencesPage() {
         <p>When <strong>Check Reply</strong> is enabled on the campaign, the inbox worker monitors sender mailboxes via IMAP. If a lead replies to any step, all subsequent steps are skipped for that lead.</p>
 
         <h2>Retry Logic</h2>
-        <p>If a send fails with a temporary error (greylisting, rate limit), cold mail automatically retries after <strong>4 hours</strong>. Permanent errors (550, user unknown) are never retried — the lead is blocklisted and the sequence halts.</p>
+        <p>If a send fails with a temporary error (greylisting, rate limit), Cleanmails automatically retries after <strong>4 hours</strong>. Permanent errors (550, user unknown) are never retried — the lead is blocklisted and the sequence halts.</p>
       </div>
     </DocsLayout>
   )

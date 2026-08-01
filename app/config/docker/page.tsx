@@ -10,7 +10,7 @@ export default function DockerPage() {
       <div className="docs-prose">
         <span className="inline-block text-[10px] font-semibold text-[var(--text-secondary)] bg-[var(--tag-bg)] px-2.5 py-1 rounded uppercase tracking-wider mb-4">Configuration</span>
         <h1>Docker Compose</h1>
-        <p>Cold mail runs as a six-container Docker Compose stack: PostgreSQL, Redis, API server, background worker, Next.js frontend, and Caddy reverse proxy.</p>
+        <p>Cleanmails runs as a six-container Docker Compose stack: PostgreSQL, Redis, API server, background worker, Next.js frontend, and Caddy reverse proxy.</p>
 
         <h2>Services</h2>
         <table>

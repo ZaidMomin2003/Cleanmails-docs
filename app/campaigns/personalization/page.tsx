@@ -13,7 +13,7 @@ export default function PersonalizationPage() {
         </span>
         <h1>Spintax & Personalization</h1>
         <p>
-          cold mail supports three layers of dynamic content in your campaign emails: 
+          Cleanmails supports three layers of dynamic content in your campaign emails: 
           spintax for variation, personalization tags for lead data, and AI tags for Gemini-powered content generation.
         </p>
 
