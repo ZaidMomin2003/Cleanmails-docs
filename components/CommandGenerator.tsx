@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 
-const INSTALL_COMMAND = 'curl -fsSL https://cleanmails.online/install.sh | sudo bash'
+const INSTALL_COMMAND = 'curl -fsSL https://coldmail.host/install.sh | sudo bash'
 
 export default function CommandGenerator() {
   const [copied, setCopied] = useState(false)

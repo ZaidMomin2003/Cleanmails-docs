@@ -9,7 +9,7 @@ export default function MonitoringPage() {
       <div className="docs-prose">
         <span className="inline-block text-[10px] font-semibold text-[var(--text-secondary)] bg-[var(--tag-bg)] px-2.5 py-1 rounded uppercase tracking-wider mb-4">Operations</span>
         <h1>Monitoring & Health</h1>
-        <p>Cleanmails provides health endpoints and Docker-native monitoring for your instance.</p>
+        <p>cold mail provides health endpoints and Docker-native monitoring for your instance.</p>
 
         <h2>Basic Health Check</h2>
         <CodeBlock language="bash" code={`curl http://YOUR_SERVER/health`} />

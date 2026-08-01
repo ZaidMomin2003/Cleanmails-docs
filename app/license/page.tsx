@@ -11,12 +11,12 @@ export default function LicensePage() {
           Getting Started
         </span>
         <h1>License Activation</h1>
-        <p>Cleanmails requires a valid license key to operate. The license is verified during the onboarding wizard and periodically checked by a background task.</p>
+        <p>Cold mail requires a valid license key to operate. The license is verified during the onboarding wizard and periodically checked by a background task.</p>
 
         <h2>Activating Your License</h2>
         <p>License activation happens during the onboarding wizard (Step 1):</p>
         <ol>
-          <li>Open your Cleanmails instance in a browser</li>
+          <li>Open your cold mail instance in a browser</li>
           <li>Enter your license key on the first step of the setup wizard</li>
           <li>The system validates the key against the license server</li>
           <li>On success, proceed to branding and admin account creation</li>

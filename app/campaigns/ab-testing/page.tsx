@@ -12,12 +12,12 @@ export default function ABTestingPage() {
           Campaigns
         </span>
         <h1>A/B Testing</h1>
-        <p>Test multiple subject lines per step to find what resonates best with your audience. Cleanmails automatically picks the winner after enough data.</p>
+        <p>Test multiple subject lines per step to find what resonates best with your audience. Cold mail automatically picks the winner after enough data.</p>
 
         <h2>How It Works</h2>
         <ol>
           <li>Add multiple subject lines to any campaign step (stored as a JSON array)</li>
-          <li>Cleanmails distributes sends evenly across variants (round-robin)</li>
+          <li>Cold mail distributes sends evenly across variants (round-robin)</li>
           <li>Once each variant reaches 100 sends, the system compares open rates</li>
           <li>The variant with the highest open rate becomes the auto-winner</li>
           <li>All subsequent sends use only the winning subject</li>
@@ -46,7 +46,7 @@ export default function ABTestingPage() {
         <p>The auto-winner is selected when <strong>all variants have at least 100 sends</strong>. The variant with the highest open rate (excluding bot opens) wins.</p>
 
         <Callout type="info" title="Bot detection">
-          <p>Cleanmails filters out bot opens (Barracuda, Proofpoint, Apple Privacy Proxy, etc.) and suspiciously fast opens (&lt;2 seconds after delivery) from A/B calculations.</p>
+          <p>Cold mail filters out bot opens (Barracuda, Proofpoint, Apple Privacy Proxy, etc.) and suspiciously fast opens (&lt;2 seconds after delivery) from A/B calculations.</p>
         </Callout>
 
         <Callout type="tip" title="Best practice">

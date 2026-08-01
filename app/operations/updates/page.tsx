@@ -10,7 +10,7 @@ export default function UpdatesPage() {
       <div className="docs-prose">
         <span className="inline-block text-[10px] font-semibold text-[var(--text-secondary)] bg-[var(--tag-bg)] px-2.5 py-1 rounded uppercase tracking-wider mb-4">Operations</span>
         <h1>Self-Update</h1>
-        <p>Cleanmails can update itself from the admin dashboard or via the included update script. Updates download the latest release from S3, rebuild Docker images, and restart all services.</p>
+        <p>Cold mail can update itself from the admin dashboard or via the included update script. Updates download the latest release from S3, rebuild Docker images, and restart all services.</p>
 
         <h2>Update via Dashboard</h2>
         <p>From the admin panel: <strong>Admin → System → Check for Updates</strong></p>

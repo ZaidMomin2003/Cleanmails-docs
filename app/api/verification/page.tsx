@@ -11,7 +11,7 @@ export default function VerificationAPIPage() {
       <div className="docs-prose">
         <span className="inline-block text-[10px] font-semibold text-[var(--text-secondary)] bg-[var(--tag-bg)] px-2.5 py-1 rounded uppercase tracking-wider mb-4">API Reference</span>
         <h1>Verification Endpoints</h1>
-        <p>Email verification in Cleanmails is handled through the lead validation system. Upload a lead list and trigger validation as a background job.</p>
+        <p>Email verification in cold mail is handled through the lead validation system. Upload a lead list and trigger validation as a background job.</p>
 
         <h2>Validate Leads</h2>
         <CodeBlock language="bash" code={`POST /api/v1/workspaces/:wid/leads/validate`} />

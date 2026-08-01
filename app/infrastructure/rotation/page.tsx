@@ -11,7 +11,7 @@ export default function RotationPage() {
           Senders & Domains
         </span>
         <h1>Sender Rotation</h1>
-        <p>Cleanmails automatically rotates between your mailbox accounts when sending campaign emails. This distributes volume, protects reputation, and avoids triggering provider rate limits.</p>
+        <p>Cold mail automatically rotates between your mailbox accounts when sending campaign emails. This distributes volume, protects reputation, and avoids triggering provider rate limits.</p>
 
         <h2>How Rotation Works</h2>
         <p>When the dispatcher needs to send an email, it selects a mailbox using this algorithm:</p>

@@ -13,7 +13,7 @@ export default function WebhooksPage() {
         </span>
         <h1>Webhooks</h1>
         <p>
-          Cleanmails fires real-time webhook events when things happen in your outreach. 
+          Cold mail fires real-time webhook events when things happen in your outreach. 
           Use webhooks to sync with CRMs, trigger automation platforms (Zapier, Make, n8n), or build custom dashboards.
         </p>
 
@@ -40,7 +40,7 @@ export default function WebhooksPage() {
   -H "Content-Type: application/json" \\
   -H "Cookie: auth_token=YOUR_JWT_TOKEN" \\
   -d '{
-    "url": "https://your-app.com/webhook/cleanmails",
+    "url": "https://your-app.com/webhook/coldmail",
     "secret": "your-hmac-signing-secret",
     "events": ["lead.replied", "lead.bounced", "meeting.booked"]
   }'`} />
@@ -120,13 +120,13 @@ curl https://YOUR_SERVER/api/v1/workspaces/1/webhooks/WEBHOOK_ID/logs \\
         <table>
           <thead><tr><th>Platform</th><th>Setup</th></tr></thead>
           <tbody>
-            <tr><td><strong>Zapier</strong></td><td>Use &quot;Catch Hook&quot; trigger → paste the Zap webhook URL into Cleanmails</td></tr>
+            <tr><td><strong>Zapier</strong></td><td>Use &quot;Catch Hook&quot; trigger → paste the Zap webhook URL into cold mail</td></tr>
             <tr><td><strong>Make (Integromat)</strong></td><td>Use &quot;Custom Webhook&quot; module → paste the Make webhook URL</td></tr>
             <tr><td><strong>n8n</strong></td><td>Use &quot;Webhook&quot; node → paste the n8n webhook URL</td></tr>
             <tr><td><strong>Activepieces</strong></td><td>Use &quot;Webhook Trigger&quot; → paste the webhook URL</td></tr>
           </tbody>
         </table>
-        <p>This lets you push Cleanmails events into any of the 5,000+ apps these platforms support.</p>
+        <p>This lets you push cold mail events into any of the 5,000+ apps these platforms support.</p>
       </div>
     </DocsLayout>
   )

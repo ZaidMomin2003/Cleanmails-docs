@@ -9,7 +9,7 @@ export default function LevelsPage() {
       <div className="docs-prose">
         <span className="inline-block text-[10px] font-semibold text-[var(--text-secondary)] bg-[var(--tag-bg)] px-2.5 py-1 rounded uppercase tracking-wider mb-4">Email Validation</span>
         <h1>Validation Scoring</h1>
-        <p>Cleanmails assigns a score from 0–100 to each validated lead. This page explains exactly how the scoring algorithm works.</p>
+        <p>cold mail assigns a score from 0–100 to each validated lead. This page explains exactly how the scoring algorithm works.</p>
 
         <h2>Scoring Breakdown</h2>
         <p>Points are added based on each check that passes:</p>

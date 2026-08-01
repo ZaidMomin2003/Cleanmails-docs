@@ -10,7 +10,7 @@ export default function BackupsPage() {
       <div className="docs-prose">
         <span className="inline-block text-[10px] font-semibold text-[var(--text-secondary)] bg-[var(--tag-bg)] px-2.5 py-1 rounded uppercase tracking-wider mb-4">Operations</span>
         <h1>Backups</h1>
-        <p>Cleanmails stores all data in PostgreSQL. The included backup script uses <code>pg_dump</code> to create compressed backups with automatic rotation.</p>
+        <p>Cold mail stores all data in PostgreSQL. The included backup script uses <code>pg_dump</code> to create compressed backups with automatic rotation.</p>
 
         <h2>Quick Backup</h2>
         <CodeBlock language="bash" code={`cd /opt/cleanmails

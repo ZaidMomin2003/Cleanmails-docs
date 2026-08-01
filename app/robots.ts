@@ -8,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
         allow: '/',
       },
     ],
-    sitemap: 'https://cleanmails.online/docs/sitemap.xml',
+    sitemap: 'https://coldmail.host/docs/sitemap.xml',
   }
 }

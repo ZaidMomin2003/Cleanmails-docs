@@ -13,13 +13,13 @@ export default function WarmupPage() {
         <h1>Mailbox Warmup</h1>
         <p>
           New mailboxes have no sending reputation. Sending cold emails from a fresh mailbox will likely land in spam. 
-          Cleanmails includes a coordinated warmup pool that builds reputation by exchanging real emails with other Cleanmails instances worldwide.
+          cold mail includes a coordinated warmup pool that builds reputation by exchanging real emails with other cold mail instances worldwide.
         </p>
 
         <h2>How the Pool Works</h2>
-        <p>Unlike simple peer-to-peer warmup (sending between your own mailboxes), Cleanmails uses a <strong>coordinated cross-instance pool</strong>:</p>
+        <p>Unlike simple peer-to-peer warmup (sending between your own mailboxes), cold mail uses a <strong>coordinated cross-instance pool</strong>:</p>
         <ol>
-          <li>Your mailboxes register with the central coordinator at <code>cleanmails.online</code></li>
+          <li>Your mailboxes register with the central coordinator at <code>coldmail.host</code></li>
           <li>The coordinator assigns daily send/receive tasks — pairing your mailboxes with other instances&apos; mailboxes</li>
           <li>Your instance sends warmup emails to mailboxes on other servers (and receives from them)</li>
           <li>Received warmup emails are auto-opened and auto-replied to after a delay</li>

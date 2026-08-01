@@ -11,15 +11,15 @@ export default function DocsHome() {
           <span className="inline-block text-[10px] font-semibold text-[var(--text-secondary)] bg-[var(--tag-bg)] px-2.5 py-1 rounded uppercase tracking-wider mb-4">
             Documentation
           </span>
-          <h1>Cleanmails Documentation</h1>
+          <h1>Cold Mail Documentation</h1>
           <p className="text-[var(--text-secondary)] text-base leading-relaxed">
-            Cleanmails is a self-hosted cold email infrastructure platform. It combines email validation, 
+            Cold mail is a self-hosted cold email infrastructure platform. It combines email validation, 
             multi-step campaign automation, sender rotation, mailbox warmup, AI personalization, and a full 
             outreach CRM — all deployed on your own VPS with a single command. No monthly fees, no usage caps.
           </p>
         </div>
 
-        <Callout type="tip" title="New to Cleanmails?">
+        <Callout type="tip" title="New to cold mail?">
           <p>Start with the <Link href="/quick-deploy">Quick Deploy</Link> guide to get up and running in under 10 minutes.</p>
         </Callout>
 
@@ -45,11 +45,11 @@ export default function DocsHome() {
         </div>
 
         <h2>Quick Start</h2>
-        <p>Deploy Cleanmails on any Ubuntu/Debian VPS with a single command:</p>
+        <p>Deploy cold mail on any Ubuntu/Debian VPS with a single command:</p>
 
         <CodeBlock
           language="bash"
-          code={`curl -fsSL https://cleanmails.online/install.sh | sudo bash -s -- --domain app.yourdomain.com`}
+          code={`curl -fsSL https://coldmail.host/install.sh | sudo bash -s -- --domain app.yourdomain.com`}
         />
 
         <p>This installs Docker, downloads the latest release from S3, builds the container images, generates secure encryption keys, configures Caddy for automatic SSL, and starts the full stack. The whole process takes 2-5 minutes.</p>
@@ -68,7 +68,7 @@ export default function DocsHome() {
         </table>
 
         <h2>Architecture Overview</h2>
-        <p>Cleanmails runs as a single Docker Compose stack with six containers:</p>
+        <p>Cold mail runs as a single Docker Compose stack with six containers:</p>
         <ul>
           <li><strong>API Server</strong> — Go (Gin) backend handling all REST endpoints (port 8080 internal)</li>
           <li><strong>Worker</strong> — Background job processor (campaign dispatch, IMAP sync, AI replies, warmup, validation)</li>
@@ -81,7 +81,7 @@ export default function DocsHome() {
 
         <h2>Support</h2>
         <p>
-          Need help? Reach out via the <a href="https://cleanmails.online/support.html" target="_blank" rel="noopener noreferrer">support page</a> or 
+          Need help? Reach out via the <a href="https://coldmail.host/support.html" target="_blank" rel="noopener noreferrer">support page</a> or 
           use the AI Copilot built into your dashboard for instant answers about your workspace.
         </p>
       </div>

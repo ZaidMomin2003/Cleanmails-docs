@@ -14,7 +14,7 @@ export default function InstallationPage() {
         </span>
         <h1>Installation</h1>
         <p>
-          Cleanmails runs as a Docker Compose stack on any Linux VPS. This page covers the full manual installation 
+          Cold mail runs as a Docker Compose stack on any Linux VPS. This page covers the full manual installation 
           process. For the fastest path, see <Link href="/quick-deploy">Quick Deploy</Link>.
         </p>
 

@@ -138,7 +138,7 @@ docker compose -f docker-compose.prod.yml up -d`} />
 
         <h2>Getting Help</h2>
         <ul>
-          <li>Check the <a href="https://cleanmails.online/support.html" target="_blank" rel="noopener noreferrer">Support page</a> for direct assistance</li>
+          <li>Check the <a href="https://coldmail.host/support.html" target="_blank" rel="noopener noreferrer">Support page</a> for direct assistance</li>
           <li>Include your logs and health check output when reporting issues</li>
           <li>Mention your server OS, RAM, and Docker version</li>
         </ul>

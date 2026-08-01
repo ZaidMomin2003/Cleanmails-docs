@@ -13,20 +13,20 @@ export default function Navbar() {
             </svg>
           </div>
           <div className="truncate">
-            <span className="text-[13px] sm:text-[14px] font-semibold text-[var(--text)]">Cleanmails</span>
+            <span className="text-[13px] sm:text-[14px] font-semibold text-[var(--text)]">Cold Mail</span>
             <span className="text-[13px] sm:text-[14px] text-[var(--text-tertiary)] ml-1 sm:ml-1.5">/</span>
             <span className="text-[13px] sm:text-[14px] text-[var(--text-tertiary)] ml-1 sm:ml-1.5">Docs</span>
           </div>
         </Link>
         <div className="flex items-center gap-2 sm:gap-2.5 flex-shrink-0">
-          <a href="https://cleanmails.online/blog" target="_blank" rel="noopener noreferrer"
+          <a href="https://coldmail.host/blog" target="_blank" rel="noopener noreferrer"
             className="text-[13px] text-[var(--text-secondary)] hover:text-[var(--text)] no-underline transition-colors hidden sm:inline">
             Blog
           </a>
           <ThemeToggle />
-          <a href="https://cleanmails.online" target="_blank" rel="noopener noreferrer"
+          <a href="https://coldmail.host" target="_blank" rel="noopener noreferrer"
             className="text-[11px] sm:text-[12px] font-semibold text-[#37352f] bg-[#FFD700] hover:bg-[#f0cc00] px-2.5 sm:px-3.5 py-1.5 rounded-md transition-colors no-underline whitespace-nowrap">
-            Get Cleanmails
+            Get Cold Mail
           </a>
         </div>
       </div>

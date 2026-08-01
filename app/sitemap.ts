@@ -46,7 +46,7 @@ const pages = [
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return pages.map((page) => ({
-    url: `https://cleanmails.online/docs${page === '/' ? '' : page}`,
+    url: `https://coldmail.host/docs${page === '/' ? '' : page}`,
     lastModified: new Date(),
     changeFrequency: 'weekly' as const,
     priority: page === '/' ? 1 : 0.8,

@@ -15,7 +15,7 @@ export default function DomainsPage() {
         <h1>Adding Domains</h1>
         <p>
           Before you can send emails, you need to add and verify at least one sending domain. 
-          Cleanmails automatically generates DKIM keys and provides the DNS records you need to configure.
+          Cold mail automatically generates DKIM keys and provides the DNS records you need to configure.
         </p>
 
         <h2>Adding a Domain (Dashboard)</h2>
@@ -29,7 +29,7 @@ export default function DomainsPage() {
         </Step>
 
         <Step number={3} title="Configure DNS records">
-          <p>After adding, Cleanmails shows you the DNS records to add. Go to your domain registrar (Cloudflare, Namecheap, GoDaddy, etc.) and add these records:</p>
+          <p>After adding, cold mail shows you the DNS records to add. Go to your domain registrar (Cloudflare, Namecheap, GoDaddy, etc.) and add these records:</p>
         </Step>
 
         <h3>Required DNS Records</h3>
@@ -56,7 +56,7 @@ Priority: 10
 Value: mail.yourdomain.com`} />
 
         <Step number={4} title="Verify DNS">
-          <p>Click <strong>Verify</strong> in the dashboard. Cleanmails checks all DNS records in real-time. Once SPF and DKIM pass, the domain status changes to <strong>Active</strong>.</p>
+          <p>Click <strong>Verify</strong> in the dashboard. Cold mail checks all DNS records in real-time. Once SPF and DKIM pass, the domain status changes to <strong>Active</strong>.</p>
         </Step>
 
         <Callout type="info" title="DNS Propagation">
@@ -64,7 +64,7 @@ Value: mail.yourdomain.com`} />
         </Callout>
 
         <h2>How DKIM Works</h2>
-        <p>When you add a domain, Cleanmails:</p>
+        <p>When you add a domain, cold mail:</p>
         <ol>
           <li>Generates a 2048-bit RSA key pair</li>
           <li>Stores the private key securely (encrypted with your MASTER_KEY)</li>

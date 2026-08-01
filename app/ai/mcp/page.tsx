@@ -14,14 +14,14 @@ export default function MCPPage() {
         </span>
         <h1>MCP Server</h1>
         <p>
-          Cleanmails includes a built-in <strong>Model Context Protocol (MCP)</strong> server that lets you 
+          Cold mail includes a built-in <strong>Model Context Protocol (MCP)</strong> server that lets you 
           control your outreach platform directly from AI coding assistants like Claude Desktop, Cursor, or any MCP-compatible client.
         </p>
 
         <h2>What is MCP?</h2>
         <p>
           MCP (Model Context Protocol) is an open standard that allows AI assistants to interact with external tools. 
-          The Cleanmails MCP server exposes your campaigns, mailboxes, leads, and inbox as tools that an AI can read and control.
+          The cold mail MCP server exposes your campaigns, mailboxes, leads, and inbox as tools that an AI can read and control.
         </p>
 
         <h2>Available Tools</h2>
@@ -43,7 +43,7 @@ export default function MCPPage() {
 
         <h2>Architecture</h2>
         <p>
-          The MCP server is built into the Cleanmails API as an HTTP endpoint at <code>/api/v1/mcp</code>. 
+          The MCP server is built into the cold mail API as an HTTP endpoint at <code>/api/v1/mcp</code>. 
           It uses JSON-RPC 2.0 protocol and requires authentication (JWT token or API key).
         </p>
         <p>
@@ -54,11 +54,11 @@ export default function MCPPage() {
         <h2>Setup for Claude Desktop</h2>
 
         <Step number={1} title="Download the MCP binary">
-          <p>The MCP server binary is included in your Cleanmails installation at <code>/opt/cleanmails/cleanmails-mcp</code>. Copy it to your local machine.</p>
+          <p>The MCP server binary is included in your cold mail installation at <code>/opt/cleanmails/cleanmails-mcp</code>. Copy it to your local machine.</p>
         </Step>
 
         <Step number={2} title="Get your API key">
-          <p>Go to your Cleanmails dashboard → Settings → API &amp; MCP tab, and generate an API key. It will have the format <code>cm_live_xxx</code>.</p>
+          <p>Go to your cold mail dashboard → Settings → API &amp; MCP tab, and generate an API key. It will have the format <code>cm_live_xxx</code>.</p>
         </Step>
 
         <Step number={3} title="Configure Claude Desktop">
@@ -67,10 +67,10 @@ export default function MCPPage() {
 
         <CodeBlock language="json" filename="claude_desktop_config.json" code={`{
   "mcpServers": {
-    "cleanmails": {
+    "coldmail": {
       "command": "/path/to/cleanmails-mcp",
       "args": [
-        "--api-url", "https://your-cleanmails-domain.com",
+        "--api-url", "https://your-coldmail-domain.com",
         "--api-key", "cm_live_YOUR_API_KEY"
       ]
     }
@@ -78,7 +78,7 @@ export default function MCPPage() {
 }`} />
 
         <Step number={4} title="Restart Claude Desktop">
-          <p>After saving the config, restart Claude Desktop. You should see &quot;cleanmails&quot; appear in the available tools list.</p>
+          <p>After saving the config, restart Claude Desktop. You should see &quot;coldmail&quot; appear in the available tools list.</p>
         </Step>
 
         <h2>Setup for Cursor</h2>
@@ -86,7 +86,7 @@ export default function MCPPage() {
 
         <CodeBlock language="json" filename=".cursor/mcp.json" code={`{
   "mcpServers": {
-    "cleanmails": {
+    "coldmail": {
       "command": "/path/to/cleanmails-mcp",
       "args": ["--api-url", "https://your-domain.com", "--api-key", "cm_live_YOUR_KEY"]
     }
@@ -100,8 +100,8 @@ export default function MCPPage() {
             <tr><th>Variable</th><th>Description</th></tr>
           </thead>
           <tbody>
-            <tr><td><code>CLEANMAILS_API_URL</code></td><td>Your Cleanmails server URL (e.g., https://app.yourdomain.com)</td></tr>
-            <tr><td><code>CLEANMAILS_API_KEY</code></td><td>Your API key (cm_live_xxx format)</td></tr>
+            <tr><td><code>COLDMAIL_API_URL</code></td><td>Your cold mail server URL (e.g., https://app.yourdomain.com)</td></tr>
+            <tr><td><code>COLDMAIL_API_KEY</code></td><td>Your API key (cm_live_xxx format)</td></tr>
           </tbody>
         </table>
 
@@ -132,7 +132,7 @@ export default function MCPPage() {
         </ul>
 
         <Callout type="info" title="Protocol Version">
-          <p>The Cleanmails MCP server implements JSON-RPC 2.0. The standalone binary uses stdio transport (stdin/stdout) for compatibility with Claude Desktop and Cursor.</p>
+          <p>The cold mail MCP server implements JSON-RPC 2.0. The standalone binary uses stdio transport (stdin/stdout) for compatibility with Claude Desktop and Cursor.</p>
         </Callout>
 
         <h2>Troubleshooting</h2>
@@ -143,7 +143,7 @@ export default function MCPPage() {
           <tbody>
             <tr><td>Tools not appearing</td><td>Check that the binary path is correct and executable (<code>chmod +x</code>)</td></tr>
             <tr><td>API errors (401)</td><td>Your API key may be invalid — generate a new one from the dashboard</td></tr>
-            <tr><td>Connection refused</td><td>Ensure your Cleanmails server is running and accessible from your machine</td></tr>
+            <tr><td>Connection refused</td><td>Ensure your cold mail server is running and accessible from your machine</td></tr>
             <tr><td>Wrong workspace</td><td>API keys are scoped to a workspace — ensure you&apos;re using the right key</td></tr>
           </tbody>
         </table>
